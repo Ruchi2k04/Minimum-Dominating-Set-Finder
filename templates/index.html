@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/f780059320.js" crossorigin="anonymous"></script>
+    <title>MDS Finder</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="user">
+            <img src="../static/logo.png" alt="PPE detection logo">
+            <h3 class="name"><span>MDS Finder</span></h3>
+            <p class="post">A Quantum Computing circuit</p>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#try">TRY MODEL</a></li>
+                <li><a href="#abstract">ABSTRACT</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="home" id="home">
+
+        <h3>HEY !</h3>
+        <h2>THIS IS <span> MINIMUM DOMINATING SET FINDER </span></h2>
+        <p>A <span>QUANTUM COMPUTING</span> algorithm for identifying Minimum Dominating Set of a graph.
+        </p>
+        <div>
+            <a href="#try"><button class="btn">Try Model</button></a>
+            <a href="#abstract"><button class="btn">Abstract</button></a>
+        </div>
+
+
+    </section>
+
+    <section class="try" id="try">
+        <h1 class="heading"> Try <span>Model</span> </h1>
+
+        <div class="cont">
+            <form action="/build_graph" method="post">
+                <div>
+                    <label for="vertices" class="form-label">Number of Vertices:</label>
+                    <input class="form-control" type="number" name="vertices" id="vertices" min="1" required>
+                </div>
+
+                <div>
+                    <label for="edges" class="form-label">Edge Pairs (comma-separated, e.g., 0-1,1-2):</label>
+                    <input class="form-control" type="text" name="edges" id="edges" placeholder="Format: 0-1,1-2,2-3"
+                        required>
+                </div>
+
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="abstract" id="abstract">
+
+        <h1 class="heading"> <span>Abstract</span> </h1>
+        <p>
+            The minimum dominating set problem involves finding the smallest set of nodes in a graph such that every
+            node is either in this set or directly connected to it, making it a challenging NP-complete problem. Quantum
+            computing offers promising solutions to such problems through the use of quantum algorithms. Grover’s search
+            algorithm has the potential to provide faster search times compared to classical methods. This study
+            leverages the quantum computing platform Qiskit to design and test a quantum algorithm aimed at solving the
+            minimum dominating set problem. The proposed algorithm is experimental, producing probabilistic results and
+            visualizing potential solutions using histograms. The goal is to develop a quantum algorithm that can
+            outperform classical approaches in solving minimum dominating sets, showcasing the power of quantum
+            computing for tackling complex combinatorial optimization problems.
+        </p>
+
+        <p><span>Key Words: </span>Quantum Computing, Qiskit, Grover’s Algorithm, Minimum Dominating Set.</p>
+
+
+    </section>
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span>About</span> Us </h1>
+        <h2 class="title"><span> TEAM MEMBERS </span>(Group no. 20)</h2>
+        <div class="info">
+            <h3> <span>245621733106 </span> Nallanagula Ruchita</h3>
+            <h3> <span>245621733081 </span>Chitturi Jyothirmai </h3>
+            <h3> <span>245621733085 </span> Garlapati Gayathri</h3>
+            <h3> <span><strong>Name of the Guide: </strong></span> Sandhya</h3>
+        </div>
+        <h2 class="title"><span>CONTACT INFO</span></h2>
+
+        <div class="contact">
+            <h3> <i class="fas fa-phone"></i> +91-7894561230 </h3>
+            <h3 class="lowercase"> <i class="fa-solid fa-envelope"></i> mdsfinder@gmail.com </h3>
+            <h3> <i class="fas fa-map-marker-alt"></i> Hyderabad, india - 500000</h3>
+        </div>
+
+
+    </section>
+
+</body>
+
+</html>

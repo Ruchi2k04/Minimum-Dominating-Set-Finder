@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Results - MDS Finder</title>
+    <link rel="stylesheet" href="../static/res.css">
+</head>
+
+<body>
+
+    <section class="results">
+        <h1 class="heading"> <span>Quantum Circuit</span> Results </h1>
+
+        <div class="result-image">
+            <h2>Graph Diagram</h2>
+            <img src="{{ url_for('input1') }}" alt="Graph Diagram">
+        </div>
+
+        <div class="result-image">
+            <h2>Circuit Diagram</h2>
+            <img src="{{ url_for('input2') }}" alt="Circuit Diagram">
+        </div>
+
+        <div class="result-image">
+            <h2>Output Histogram</h2>
+            <img src="{{ url_for('input3') }}" alt="Histogram">
+        </div>
+
+        <div class="back-button">
+            <a href="/#try"><button class="btn">Back to Try Model</button></a>
+        </div>
+    </section>
+
+</body>
+
+</html>
